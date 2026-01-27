@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Project: Recipe book</title>
+    <style>
+      /* element selectors */
+      body{
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: rgb(10, 12, 20);
+        color: rgb(240, 240, 245);
+        line-height: 1.5;
+      }
+
+      h1{
+        margin: 0 0 8px;
+        color: rgb(255, 70, 170);
+      }
+
+      h2{
+        margin: 18px 0 10px;
+        color: rgb(120, 210, 255);
+      }
+
+      h3{
+        margin: 0 0 8px;
+        color: rgb(255, 220, 0);
+      }
+
+      a{
+        color: rgb(120, 210, 255);
+        text-decoration: none;
+      }
+
+      a:hover{
+        text-decoration: underline;
+      }
+
+      table{
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 8px;
+        background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      th, td{
+        padding: 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.10);
+        text-align: left;
+      }
+
+      th{
+        background: rgba(255,255,255,0.08);
+      }
+
+      /* class + id selectors */
+      .wrap{
+        width: 92%;
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 18px 0 34px;
+      }
+
+      #top{
+        border-bottom: 1px solid rgba(255,255,255,0.12);
+        padding-bottom: 14px;
+        margin-bottom: 14px;
+      }
+
+      .badge{
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: 0.6px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(255,255,255,0.10);
+        color: rgb(255, 220, 0);
+      }
+
+      .sub{
+        opacity: 0.85;
+        max-width: 720px;
+        margin: 8px 0 0;
+      }
+
+      .toc{
+        background: rgba(255,255,255,0.08);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 18px;
+        padding: 14px;
+        margin: 12px 0 18px;
+      }
+
+      .card{
+        background: rgba(255,255,255,0.08);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 18px;
+        padding: 14px;
+        margin: 14px 0;
+      }
+
+      .meta{
+        opacity: 0.9;
+        margin: 8px 0 0 18px;
+      }
+
+      .img{
+        width: 100%;
+        max-width: 520px;
+        border-radius: 16px;
+        border: 1px solid rgba(255,255,255,0.14);
+        display: block;
+        margin-top: 10px;
+      }
+
+      .note{
+        opacity: 0.85;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+
+      .back{
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 12px;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div id="top">
+        <span class="badge">RECIPE BOOK</span>
+        <h1>3 quick recipes I actually make</h1>
+        <p class="sub">
+          Simple ingredients, clear steps, and no “chef stress”.
+          Everything here is written in my own words.
+        </p>
+      </div>
+
+      <div class="toc">
+        <h2>Contents</h2>
+        <ol>
+          <li><a href="#recipe1">Creamy Garlic Pasta</a></li>
+          <li><a href="#recipe2">Crunchy Tuna Sandwich</a></li>
+          <li><a href="#recipe3">Lazy Yogurt Berry Bowl</a></li>
+        </ol>
+      </div>
+
+      <!-- RECIPE 1 -->
+      <div class="card" id="recipe1">
+        <h2>Creamy Garlic Pasta</h2>
+        <ul class="meta">
+          <li>Time: 15–20 min</li>
+          <li>Serves: 2</li>
+          <li>Level: easy</li>
+        </ul>
+
+        <img class="img" src="https://www.kasandbox.org/programming-images/food/pasta.png" alt="pasta">
+
+        <h3>Ingredients</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Ingredient</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Pasta</td><td>200 g</td></tr>
+            <tr><td>Garlic</td><td>2 cloves</td></tr>
+            <tr><td>Butter or olive oil</td><td>1 tbsp</td></tr>
+            <tr><td>Milk/cream (or yogurt)</td><td>150 ml</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Steps</h3>
+        <ol>
+          <li>Boil pasta in salted water until soft.</li>
+          <li>In a pan, warm butter/oil and lightly cook chopped garlic (don’t burn it).</li>
+          <li>Add milk/cream, stir 1–2 minutes until it looks creamy.</li>
+          <li>Mix in pasta, stir well, add salt/pepper to taste.</li>
+          <li>Optional: sprinkle cheese or herbs if you have.</li>
+        </ol>
+
+        <a class="back" href="#top">↑ back to top</a>
+      </div>
+
+      <!-- RECIPE 2 -->
+      <div class="card" id="recipe2">
+        <h2>Crunchy Tuna Sandwich</h2>
+        <ul class="meta">
+          <li>Time: 7–10 min</li>
+          <li>Serves: 1–2</li>
+          <li>Level: zero effort</li>
+        </ul>
+
+        <img class="img" src="https://www.kasandbox.org/programming-images/food/sandwich.png" alt="sandwich">
+
+        <h3>Ingredients</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Ingredient</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Bread</td><td>2 slices</td></tr>
+            <tr><td>Tuna (canned)</td><td>1 small can</td></tr>
+            <tr><td>Greek yogurt or mayo</td><td>1–2 tbsp</td></tr>
+            <tr><td>Cucumber / lettuce</td><td>a few slices</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Steps</h3>
+        <p>
+          Mix tuna with yogurt/mayo. Add a pinch of salt + pepper.
+          Put it on bread, add cucumber/lettuce, close and eat.
+          If you want extra crunch — toast the bread first.
+        </p>
+
+        <a class="back" href="#top">↑ back to top</a>
+      </div>
+
+      <!-- RECIPE 3 -->
+      <div class="card" id="recipe3">
+        <h2>Lazy Yogurt Berry Bowl</h2>
+        <ul class="meta">
+          <li>Time: 3–5 min</li>
+          <li>Serves: 1</li>
+          <li>Level: no cooking</li>
+        </ul>
+
+        <img class="img" src="https://www.kasandbox.org/programming-images/food/strawberries.png" alt="berries">
+
+        <h3>Ingredients</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Ingredient</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Yogurt</td><td>200 g</td></tr>
+            <tr><td>Berries (any)</td><td>1 handful</td></tr>
+            <tr><td>Honey</td><td>1 tsp</td></tr>
+            <tr><td>Granola / nuts</td><td>2 tbsp</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Steps</h3>
+        <ol>
+          <li>Put yogurt into a bowl.</li>
+          <li>Top with berries.</li>
+          <li>Add honey and granola/nuts.</li>
+          <li>Eat immediately (best texture).</li>
+        </ol>
+
+        <a class="back" href="#top">↑ back to top</a>
+      </div>
+
+      <p class="note">
+        Tip: If you add a recipe from the internet later, add a link like:
+        <a href="https://example.com">Source</a>
+      </p>
+    </div>
+  </body>
+</html>
