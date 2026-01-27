@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Udacity — Lesson 3 (CSS Syntax)</title>
+  <link rel="stylesheet" href="lesson3.css" />
+</head>
+<body>
+  <header class="page-header">
+    <h1>Lesson 3: CSS Syntax</h1>
+    <p class="subtitle">
+      Practice: rulesets, selectors, units, colors, and CSS references.
+    </p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Tag selector (h2) + class selector (.card)</h2>
+      <p>
+        This paragraph is styled using a <strong>tag selector</strong> (p) and
+        a <strong>class selector</strong> (.note).
+        <span class="note">This is a span with a class.</span>
+      </p>
+
+      <button class="btn" type="button">Button (styled)</button>
+      <button class="btn btn-ghost" type="button">Ghost</button>
+    </section>
+
+    <section class="card">
+      <h2>Attributes & selectors</h2>
+      <p>Links with different attributes:</p>
+
+      <ul>
+        <li><a href="https://www.udacity.com" target="_blank">Udacity (target=_blank)</a></li>
+        <li><a href="https://www.w3schools.com">W3Schools (no target)</a></li>
+        <li><a href="#" title="demo link">Link with title attribute</a></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Units</h2>
+      <p class="px-demo">This text uses px.</p>
+      <p class="em-demo">This text uses em.</p>
+      <p class="rem-demo">This text uses rem.</p>
+
+      <div class="box">
+        <p>Box uses % width and padding in rem.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Colors</h2>
+      <p class="color-named">Named color</p>
+      <p class="color-hex">HEX color</p>
+      <p class="color-rgb">RGB color</p>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>Tip: Open DevTools → Elements → Styles to see CSS rules.</p>
+  </footer>
+</body>
+</html>
