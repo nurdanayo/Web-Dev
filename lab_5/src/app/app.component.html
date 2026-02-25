@@ -1,0 +1,48 @@
+<!-- Header -->
+<header class="kaspi-header">
+    <div class="container">
+      <a href="#" class="brand">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kaspi.kz_logo.svg/120px-Kaspi.kz_logo.svg.png"
+             alt="Kaspi.kz" width="40" height="40" class="logo">
+        <span class="brand-text">Kaspi Marketplace</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#" class="nav-link active">Главная</a></li>
+          <li><a href="#" class="nav-link">Каталог</a></li>
+          <li><a href="#" class="nav-link">Акции</a></li>
+          <li><a href="#" class="nav-link">Поддержка</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="container">
+    <h1>Categories</h1>
+    <ul class="categories">
+      <li *ngFor="let category of categories"
+          (click)="selectCategory(category)"
+          [class.active]="selectedCategory === category">
+        {{ category.name }}
+      </li>
+    </ul>
+  
+    <div *ngIf="selectedCategory">
+      <h2>{{ selectedCategory.name }} Products</h2>
+      <app-product-list [products]="selectedCategory.products" (removeProduct)="removeProduct($event)"></app-product-list>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Kaspi.kz. Все права защищены.</p>
+      <nav>
+        <ul>
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#">Условия использования</a></li>
+          <li><a href="#">Поддержка</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>

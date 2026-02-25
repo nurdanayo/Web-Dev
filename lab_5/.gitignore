@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+.DS_Store
+.vscode/
+=======
+node_modules/
+dist/
+.angular/
+.env
+.DS_Store
+>>>>>>> 67d27b4 (init: add lab 5)

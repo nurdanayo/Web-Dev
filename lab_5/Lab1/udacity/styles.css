@@ -1,0 +1,31 @@
+#menu {
+  text-align: center;
+}
+
+.item {
+  color: red;
+}
+
+.picture {
+  border-radius: 5px;
+}
+
+.description {
+  font-style: italic;
+}
+
+.kitten-image {
+  border: 8px dashed salmon;
+  cursor: pointer;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.35);
+}
+
+
+.udacity-text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 72px;
+  font-weight: 800;
+  color: #6a00ff;
+  text-transform: uppercase;
+  text-decoration: underline;
+}

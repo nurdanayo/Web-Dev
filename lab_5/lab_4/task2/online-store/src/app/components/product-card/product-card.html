@@ -1,0 +1,42 @@
+<div class="product-card">
+
+  <img class="product-image" [src]="mainImage" [alt]="product.name" />
+  <div class="thumbs">
+    @for (img of product.images; track img) {
+      <img
+        class="thumb"
+        [src]="img"
+        [alt]="product.name"
+        (click)="setImage(img);"
+        [class.active]="img === selectedImage"
+      />
+    }
+  </div>
+
+  <h3 class="product-title">{{ product.name }}</h3>
+  <p class="product-desc">{{ product.description }}</p>
+
+  <div class="card-bottom">
+    <div class="product-meta">
+      <span class="price">{{ product.price }} ₸</span>
+      <span class="rating">⭐ {{ product.rating }}</span>
+    </div>
+
+    <a class="kaspi-btn" [href]="product.link" target="_blank" rel="noopener noreferrer">
+      Открыть на Kaspi
+    </a>
+
+    <a class="details-btn" [routerLink]="['/products', product.id]">Подробнее</a>
+
+    <div class="share-row">
+        <a class="share-btn wa" [href]="shareWhatsAppUrl()" target="_blank" rel="noopener noreferrer">
+        Share WhatsApp
+        </a>
+
+        <a class="share-btn tg" [href]="shareTelegramUrl()" target="_blank" rel="noopener noreferrer">
+        Share Telegram
+        </a>
+    </div>
+  </div>
+
+</div>

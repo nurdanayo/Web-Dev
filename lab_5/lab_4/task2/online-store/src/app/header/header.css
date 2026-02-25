@@ -1,0 +1,49 @@
+header{
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(97, 15, 66, 0.267);
+  position: relative;
+  z-index: 10;
+  margin: 0;
+}
+
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height: 70px;
+  padding: 0 16px;
+}
+
+
+a{
+    color:rgb(243, 126, 237);
+}
+
+a.logo:hover{
+    background-color: rgb(255, 250, 164);
+    border-radius: 10px;
+}
+
+a.logo{
+  display: flex;
+  align-items: center;
+  height: 50px;        /* одинаковая высота */
+  padding: 0 18px;
+  border-radius: 20px;
+  font-weight: bold;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+a.logo img{
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}

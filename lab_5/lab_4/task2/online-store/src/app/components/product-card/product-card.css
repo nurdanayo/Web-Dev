@@ -1,0 +1,132 @@
+.product-card{
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 14px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* MAIN IMAGE */
+.product-image{
+  width: 100%;
+  height: 200px;          /* 👈 фиксированная высота */
+  object-fit: contain;    /* чтобы не обрезалось */
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  background: #fff;
+  display: block;
+}
+
+/* THUMBNAILS */
+.thumbs{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.thumb{
+  width: 100%;
+  height: 70px;           /* 👈 фикс */
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  background: #fff;
+}
+
+.thumb.active{
+  border-color: rgb(243, 126, 237);
+}
+
+.product-title{
+  margin: 12px 0 6px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.product-desc{
+  margin: 0 0 12px;
+  font-size: 14px;
+  opacity: 0.85;
+  line-height: 1.35;
+
+  flex: 1;
+}
+
+.card-bottom{
+  margin-top: auto;
+}
+
+.product-meta{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.kaspi-btn{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+
+  background: rgb(243, 126, 237);
+  color: #fff;
+}
+
+.kaspi-btn:hover{
+    background-color: #d23ed7;
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.share-row{
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.share-btn{
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  background: #fff3b0;
+  color: #000000;
+  transition: 0.2s;
+}
+
+.share-btn:hover{
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.details-btn{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+  padding: 9px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  background: rgb(243, 126, 237);
+  color: #fff;
+}
+
+.details-btn:hover{
+  transform: scale(1.05);
+  opacity: 0.9;
+}
