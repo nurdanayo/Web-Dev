@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: "Montserrat", sans-serif;
+    font-size:18px;
+    background: linear-gradient(
+    135deg,
+    #fce7ff 0%,
+    #fffce0 50%,
+    #fff0f6 100%
+    );
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+

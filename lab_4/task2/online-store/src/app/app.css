@@ -1,0 +1,39 @@
+
+
+.banner{
+  max-width: 1200px;
+  margin: 18px auto 26px;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(97, 15, 66, 0.15);
+}
+
+.banner img{
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-text{
+  position: absolute;
+  left: 22px;
+  bottom: 18px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(6px);
+}
+
+.banner-text h2{
+  margin: 0 0 6px;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.banner-text p{
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.85;
+}

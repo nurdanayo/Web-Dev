@@ -1,0 +1,40 @@
+@if (product) {
+  <div class="details">
+    <a routerLink="/" class="back">← Назад</a>
+
+    <h2>{{ product.name }}</h2>
+    <img class="main" [src]="mainImage" [alt]="product.name" />
+
+    <div class="thumbs">
+        @for (img of product.images; track img) {
+            <img
+                class="thumb"
+                [src]="img"
+                [alt]="product.name"
+                (click)="setImage(img)"
+                [class.active]="img === selectedImage"
+            />
+        }
+    </div>
+
+    <p>{{ product.description }}</p>
+    <p><b>{{ product.price }} ₸</b> • ⭐ {{ product.rating }}</p>
+
+    <a class="kaspi" [href]="product.link" target="_blank" rel="noopener noreferrer">
+      Открыть на Kaspi
+    </a>
+
+    <div class="share-row">
+        <a class="share-btn" [href]="whatsAppShareUrl()" target="_blank" rel="noopener noreferrer">
+        Share WhatsApp
+        </a>
+
+        <a class="share-btn" [href]="telegramShareUrl()" target="_blank" rel="noopener noreferrer">
+        Share Telegram
+        </a>
+    </div>
+
+  </div>
+} @else {
+  <p>Товар не найден</p>
+}

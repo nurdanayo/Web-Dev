@@ -1,0 +1,101 @@
+
+
+.product-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 14px;
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+.product-title {
+  margin: 12px 0 6px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.product-desc {
+  margin: 0 0 12px;
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.35;
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.kaspi-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  background: rgb(243, 126, 237);
+  color: rgb(255, 250, 164);
+  box-shadow: 0 0 5px rgb(243, 126, 237);
+}
+.kaspi-btn:hover{
+    background-color: rgb(255, 250, 164);
+    color:rgb(243, 126, 237);
+    box-shadow: 0 0 5px rgb(255, 250, 164);
+}
+
+.price{
+    font-weight: bold;
+}
+
+.product-card{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-desc{
+  flex: 1;              /* описание занимает “середину” */
+  margin-bottom: 12px;
+}
+
+.card-bottom{
+  margin-top: auto;     /* прижимает цену+кнопку вниз */
+}
+
+.search-wrap{
+  max-width: 1200px;
+  margin: 16px auto 10px;
+  padding: 0 16px;
+}
+
+.search{
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  outline: none;
+  font-size: 14px;
+}
